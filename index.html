@@ -4,51 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人网站</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
-<script>
-    function showMessage() {
-        alert("欢迎来到我的网站 👋");
-    }
-</script>
-
 <body>
 
+    <!-- 顶部卡片 -->
     <div class="card">
-
-        <img
-            class="avatar"
-            src="avatar.jpg"
-            alt="头像"
-        >
-
+        <img class="avatar" src="avatar.jpg" alt="头像">
         <h1>你好，我是 Panyuting 👋</h1>
-
-        <p class="intro">
-            我正在学习前端开发和 GitHub 项目。
-        </p>
-
-        <button onclick="showMessage()">
-            联系我
-        </button>
-
+        <p class="intro">我正在学习前端开发和 GitHub 项目。</p>
+        <button onclick="showMessage()">联系我</button>
     </div>
 
+    <!-- 项目区 -->
     <div class="projects">
-
         <h2>我的项目</h2>
-
-        <div class="project-card">
-            第一个 GitHub 网站
-        </div>
-
-        <div class="project-card">
-            即将上线的新项目 🚀
-        </div>
-
+        <div class="project-card">第一个 GitHub 网站</div>
+        <div class="project-card">即将上线的新项目 🚀</div>
     </div>
+
+    <!-- 技能区 -->
+    <div class="skills">
+        <h2>我的技能</h2>
+        <div class="skill-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Git</div>
+            <div class="skill">GitHub</div>
+            <div class="skill">Vercel</div>
+        </div>
+    </div>
+
+    <!-- 联系区 -->
+    <div class="contact">
+        <h2>联系我</h2>
+        <a href="https://github.com/Nov2kkkk" target="_blank">GitHub</a>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("欢迎来到我的网站 👋");
+        }
+    </script>
 
 </body>
 </html>
