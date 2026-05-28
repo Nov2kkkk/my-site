@@ -1,63 +1,121 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Panyuting | 苹果风格网站</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Panyuting Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<div class="background"></div>
+    <!-- 背景光球 -->
 
-<div class="container">
-
-    <!-- 顶部卡片 -->
-    <div class="card">
-        <img class="avatar" src="avatar.jpg" alt="头像">
-        <h1>Panyuting ✨</h1>
-        <p class="intro">Frontend Developer & Creative Coder</p>
-        <button onclick="alert('欢迎来到我的网站！')">联系我</button>
+    <div class="bg">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
     </div>
 
-    <!-- 项目区 -->
-    <div class="projects">
-        <h2>我的项目</h2>
-        <div class="project-grid">
+    <!-- 页面 -->
+
+    <div class="container">
+
+        <!-- 顶部 -->
+
+        <section class="hero">
+
+            <img
+                src="avatar.jpg"
+                class="avatar"
+            >
+
+            <h1>
+                Panyuting ✨
+            </h1>
+
+            <p>
+                Frontend Developer · UI Designer · AI Explorer
+            </p>
+
+            <div class="buttons">
+
                 <a
+                    href="https://github.com/Nov2kkkk"
+                    target="_blank"
+                >
+                    GitHub
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- 项目 -->
+
+        <section
+            class="projects"
+            id="projects"
+        >
+
+            <h2>
+                Featured Projects
+            </h2>
+
+            <div class="project-grid">
+
+                <a
+                    class="card"
                     href="my-ai-chat/index.html"
                     target="_blank"
                 >
-                    AI Chat App 🚀
+
+                    <h3>AI Chat App</h3>
+
+                    <p>
+                        ChatGPT 风格 AI 聊天网站
+                    </p>
+
                 </a>
-                
-                <h3>🌐 Personal Website</h3>
-                <p>苹果官网风格演示</p>
+
+                <div class="card">
+
+                    <h3>Portfolio Website</h3>
+
+                    <p>
+                        苹果风格个人主页
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Future Project</h3>
+
+                    <p>
+                        更多高级项目开发中...
+                    </p>
+
+                </div>
+
             </div>
-            <div class="project-card">
-                <h3>🚀 Todo App</h3>
-                <p>交互式前端项目</p>
-            </div>
-            <div class="project-card">
-                <h3>🎨 UI Design</h3>
-                <p>练习现代网页动画</p>
-            </div>
-        </div>
+
+        </section>
+
     </div>
 
-</div>
-
-<script>
-  // 浮动动画
-  const cards = document.querySelectorAll('.card, .project-card');
-  cards.forEach(card => {
-      card.style.transform = "translateY(0px)";
-      card.animate(
-        [{ transform: 'translateY(0px)' }, { transform: 'translateY(-15px)' }, { transform: 'translateY(0px)' }],
-        { duration: 4000, iterations: Infinity, easing: 'ease-in-out' }
-      );
-  });
-</script>
-
 </body>
+
 </html>
