@@ -1,87 +1,74 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panyuting Website</title>
+
+    <title>Panyuting | Personal Website</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        function showMessage() {
+            alert("欢迎来到我的个人网站 ✨");
+        }
+    </script>
 </head>
 
 <body>
+
+    <div class="background"></div>
 
     <div class="container">
 
         <div class="card">
 
-            <img class="avatar" src="avatar.jpg" alt="头像">
+            <img
+                class="avatar"
+                src="avatar.jpg"
+                alt="头像"
+            >
 
-            <h1>你好，我是 Panyuting 👋</h1>
+            <h1>Panyuting ✨</h1>
 
-            <p>
-                前端开发学习中 🚀
+            <p class="intro">
+                Frontend Learner · Creative Developer · GitHub Explorer
             </p>
+
+            <button onclick="showMessage()">
+                联系我
+            </button>
 
         </div>
 
-        <!-- Todo App -->
-        <div class="todo-box">
+        <div class="projects">
 
-            <h2>我的 Todo List ✨</h2>
+            <h2>我的项目</h2>
 
-            <div class="input-area">
+            <div class="project-grid">
 
-                <input
-                    type="text"
-                    id="todo-input"
-                    placeholder="输入新的任务..."
-                >
+                <div class="project-card">
+                    <h3>🌐 Personal Website</h3>
+                    <p>我的第一个个人网站项目</p>
+                </div>
 
-                <button onclick="addTodo()">
-                    添加
-                </button>
+                <div class="project-card">
+                    <h3>🚀 Future Project</h3>
+                    <p>正在开发中...</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>🎨 UI Design</h3>
+                    <p>练习现代网页设计</p>
+                </div>
 
             </div>
-
-            <ul id="todo-list"></ul>
 
         </div>
 
     </div>
 
-<script>
-
-function addTodo() {
-
-    const input = document.getElementById("todo-input");
-
-    const text = input.value;
-
-    if(text === "") {
-        return;
-    }
-
-    const li = document.createElement("li");
-
-    li.innerHTML = `
-        ${text}
-        <button onclick="removeTodo(this)">
-            删除
-        </button>
-    `;
-
-    document.getElementById("todo-list").appendChild(li);
-
-    input.value = "";
-}
-
-function removeTodo(button) {
-
-    button.parentElement.remove();
-
-}
-
-</script>
-
 </body>
+
 </html>
