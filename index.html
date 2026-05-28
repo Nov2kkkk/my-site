@@ -1,74 +1,63 @@
 <!DOCTYPE html>
 <html lang="zh">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Panyuting | Personal Website</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <script>
-        function showMessage() {
-            alert("欢迎来到我的个人网站 ✨");
-        }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panyuting | 苹果风格网站</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="background"></div>
+<div class="background"></div>
 
-    <div class="container">
+<div class="container">
 
-        <div class="card">
-
-            <img
-                class="avatar"
-                src="avatar.jpg"
-                alt="头像"
-            >
-
-            <h1>Panyuting ✨</h1>
-
-            <p class="intro">
-                Frontend Learner · Creative Developer · GitHub Explorer
-            </p>
-
-            <button onclick="showMessage()">
-                联系我
-            </button>
-
-        </div>
-
-        <div class="projects">
-
-            <h2>我的项目</h2>
-
-            <div class="project-grid">
-
-                <div class="project-card">
-                    <h3>🌐 Personal Website</h3>
-                    <p>我的第一个个人网站项目</p>
-                </div>
-
-                <div class="project-card">
-                    <h3>🚀 Future Project</h3>
-                    <p>正在开发中...</p>
-                </div>
-
-                <div class="project-card">
-                    <h3>🎨 UI Design</h3>
-                    <p>练习现代网页设计</p>
-                </div>
-
-            </div>
-
-        </div>
-
+    <!-- 顶部卡片 -->
+    <div class="card">
+        <img class="avatar" src="avatar.jpg" alt="头像">
+        <h1>Panyuting ✨</h1>
+        <p class="intro">Frontend Developer & Creative Coder</p>
+        <button onclick="alert('欢迎来到我的网站！')">联系我</button>
     </div>
 
-</body>
+    <!-- 项目区 -->
+    <div class="projects">
+        <h2>我的项目</h2>
+        <div class="project-grid">
+                <a
+                    href="my-ai-chat/index.html"
+                    target="_blank"
+                >
+                    AI Chat App 🚀
+                </a>
+                
+                <h3>🌐 Personal Website</h3>
+                <p>苹果官网风格演示</p>
+            </div>
+            <div class="project-card">
+                <h3>🚀 Todo App</h3>
+                <p>交互式前端项目</p>
+            </div>
+            <div class="project-card">
+                <h3>🎨 UI Design</h3>
+                <p>练习现代网页动画</p>
+            </div>
+        </div>
+    </div>
 
+</div>
+
+<script>
+  // 浮动动画
+  const cards = document.querySelectorAll('.card, .project-card');
+  cards.forEach(card => {
+      card.style.transform = "translateY(0px)";
+      card.animate(
+        [{ transform: 'translateY(0px)' }, { transform: 'translateY(-15px)' }, { transform: 'translateY(0px)' }],
+        { duration: 4000, iterations: Infinity, easing: 'ease-in-out' }
+      );
+  });
+</script>
+
+</body>
 </html>
