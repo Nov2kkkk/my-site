@@ -1,45 +1,21 @@
-const cards = document.querySelectorAll(".card");
+const reveals =
+document.querySelectorAll(".reveal");
 
-cards.forEach(card => {
+window.addEventListener("scroll", () => {
 
-    card.addEventListener("mousemove", e => {
+    reveals.forEach(reveal => {
 
-        const rect = card.getBoundingClientRect();
+        const windowHeight =
+            window.innerHeight;
 
-        const x =
-            e.clientX - rect.left;
+        const revealTop =
+            reveal.getBoundingClientRect().top;
 
-        const y =
-            e.clientY - rect.top;
+        if(revealTop < windowHeight - 100){
 
-        const centerX =
-            rect.width / 2;
+            reveal.classList.add("active");
+        }
 
-        const centerY =
-            rect.height / 2;
-
-        const rotateX =
-            ((y - centerY) / 20);
-
-        const rotateY =
-            ((centerX - x) / 20);
-
-        card.style.transform =
-            `
-            rotateX(${rotateX}deg)
-            rotateY(${rotateY}deg)
-            translateY(-10px)
-            `;
-    });
-
-    card.addEventListener("mouseleave", () => {
-
-        card.style.transform =
-            `
-            rotateX(0)
-            rotateY(0)
-            translateY(0)
-            `;
     });
 
 });
