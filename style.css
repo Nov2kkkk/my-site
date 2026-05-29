@@ -370,6 +370,10 @@ section p{
     backdrop-filter:blur(20px);
 
     transition:0.4s;
+
+    text-decoration:none;
+
+    color:white;
 }
 
 .card-glow{
@@ -457,6 +461,97 @@ section p{
 
 .card-buttons a:hover{
     background:#7c3aed;
+}
+
+/* PROJECT PAGE */
+
+.project-hero{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+}
+
+.project-badge{
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,0.08);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    margin-bottom:30px;
+}
+
+.project-hero h1{
+
+    font-size:90px;
+
+    margin-bottom:30px;
+}
+
+.project-hero p{
+
+    max-width:900px;
+
+    font-size:22px;
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+}
+
+.project-section{
+
+    padding:120px 40px;
+}
+
+.feature-grid{
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+.feature-card{
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(20px);
+}
+
+.feature-card h3{
+
+    font-size:28px;
+
+    margin-bottom:20px;
+}
+
+.feature-card p{
+
+    text-align:left;
 }
 
 /* FOOTER */
@@ -561,6 +656,10 @@ footer{
     }
 
     .hero h1{
+        font-size:56px;
+    }
+
+    .project-hero h1{
         font-size:56px;
     }
 
