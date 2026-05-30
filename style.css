@@ -672,3 +672,57 @@ footer{
     }
 
 }
+ .status{
+
+    margin-top:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#94a3b8;
+
+    font-size:15px;
+}
+
+.dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#22c55e;
+
+    animation:
+        pulseDot 2s infinite;
+}
+
+@keyframes pulseDot{
+
+    0%{
+        opacity:1;
+    }
+
+    50%{
+        opacity:.3;
+    }
+
+    100%{
+        opacity:1;
+    }
+
+}
+.project-image{
+
+    width:100%;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+
+    object-fit:cover;
+}

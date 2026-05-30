@@ -99,3 +99,29 @@ cards.forEach(card => {
     });
 
 });
+const counter =
+document.getElementById(
+    "projectCount"
+);
+
+if(counter){
+
+    let value = 0;
+
+    const timer =
+    setInterval(()=>{
+
+        value++;
+
+        counter.innerText =
+        value;
+
+        if(value >= 3){
+
+            clearInterval(timer);
+
+        }
+
+    },250);
+
+}
