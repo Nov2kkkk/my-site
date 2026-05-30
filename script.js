@@ -3,125 +3,86 @@
 const reveals =
 document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
+function revealSections(){
 
-    reveals.forEach(reveal => {
+    reveals.forEach(section => {
+
+        const top =
+        section.getBoundingClientRect().top;
 
         const windowHeight =
-            window.innerHeight;
+        window.innerHeight;
 
-        const revealTop =
-            reveal.getBoundingClientRect().top;
+        if(top < windowHeight - 100){
 
-        if(revealTop < windowHeight - 100){
-
-            reveal.classList.add("active");
+            section.classList.add("active");
         }
 
     });
 
-});
+}
+
+window.addEventListener(
+    "scroll",
+    revealSections
+);
+
+revealSections();
 
 /* NAVBAR EFFECT */
 
 const navbar =
 document.querySelector(".navbar");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll",()=>{
 
-    if(window.scrollY > 50){
+    if(window.scrollY > 20){
 
         navbar.style.background =
-            "rgba(5,8,22,0.7)";
+        "rgba(255,255,255,0.92)";
 
-        navbar.style.borderBottom =
-            "1px solid rgba(255,255,255,0.08)";
-
+        navbar.style.boxShadow =
+        "0 10px 30px rgba(15,23,42,.05)";
     }
 
     else{
 
         navbar.style.background =
-            "rgba(255,255,255,0.03)";
+        "rgba(255,255,255,.8)";
 
-        navbar.style.borderBottom =
-            "none";
+        navbar.style.boxShadow =
+        "none";
     }
 
 });
 
-/* 3D CARD EFFECT */
+/* PROJECT COUNTER */
 
-const cards =
-document.querySelectorAll(".card");
+const stat =
+document.querySelector(".stat-card h3");
 
-cards.forEach(card => {
+let count = 0;
 
-    card.addEventListener("mousemove", e => {
+function startCounter(){
 
-        const rect =
-            card.getBoundingClientRect();
-
-        const x =
-            e.clientX - rect.left;
-
-        const y =
-            e.clientY - rect.top;
-
-        const centerX =
-            rect.width / 2;
-
-        const centerY =
-            rect.height / 2;
-
-        const rotateX =
-            (y - centerY) / 20;
-
-        const rotateY =
-            (centerX - x) / 20;
-
-        card.style.transform =
-            `
-            rotateX(${rotateX}deg)
-            rotateY(${rotateY}deg)
-            translateY(-10px)
-            `;
-    });
-
-    card.addEventListener("mouseleave", () => {
-
-        card.style.transform =
-            `
-            rotateX(0)
-            rotateY(0)
-            translateY(0)
-            `;
-    });
-
-});
-const counter =
-document.getElementById(
-    "projectCount"
-);
-
-if(counter){
-
-    let value = 0;
-
-    const timer =
+    const interval =
     setInterval(()=>{
 
-        value++;
+        count++;
 
-        counter.innerText =
-        value;
+        stat.textContent =
+        count + "+";
 
-        if(value >= 3){
+        if(count >= 3){
 
-            clearInterval(timer);
-
+            clearInterval(interval);
         }
 
-    },250);
+    },300);
 
 }
+
+setTimeout(
+    startCounter,
+    800
+);
