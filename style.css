@@ -727,3 +727,39 @@ footer{
 
     white-space:nowrap;
 }
+
+.project-category {
+  margin-top: 60px;
+  font-size: 18px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.project-tagline {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.feature-list li {
+  font-size: 13px;
+  opacity: 0.8;
+  margin: 5px 0;
+  padding-left: 10px;
+}
+
+.card.featured {
+  border: 1px solid #6c63ff;
+  transform: scale(1.02);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
