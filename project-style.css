@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f8fc;
+  color: #1a1a1a;
+}
+
+/* TOP BAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #4f46e5;
+}
+
+/* HERO */
+.project-hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.project-hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.project-hero p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* TAGS */
+.tags span {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 5px;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 16px;
+  background: #4f46e5;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* CONTENT */
+.content {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.content h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.content p, .content li {
+  color: #555;
+  line-height: 1.6;
+}
