@@ -2,726 +2,177 @@
 <html lang="zh">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panyuting | Portfolio</title>
 
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        Panyuting Portfolio
-    </title>
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+<!-- NAV -->
+<nav class="navbar">
+  <div class="logo">Panyuting</div>
 
-    <nav class="navbar">
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-        <div class="logo">
-            Panyuting
-        </div>
+<!-- HERO -->
+<section class="hero">
 
-        <div class="nav-links">
+  <img src="assets/images/avatar.jpg" class="avatar" />
 
-            <a href="#about">
-                About
-            </a>
+  <div class="status">Available for Work</div>
 
-            <a href="#skills">
-                Skills
-            </a>
+  <h1>
+    Building Modern
+    <span>AI & Web Products</span>
+  </h1>
 
-            <a href="#projects">
-                Projects
-            </a>
+  <p>Frontend Developer · UI Engineer · AI Explorer</p>
 
-            <a href="#contact">
-                Contact
-            </a>
+  <div class="hero-buttons">
+    <a href="https://github.com/Nov2kkkk" target="_blank">GitHub</a>
+    <a href="#projects">View Projects</a>
+  </div>
 
-        </div>
+</section>
 
-    </nav>
+<!-- DASHBOARD -->
+<section class="dashboard">
 
-    <!-- BACKGROUND -->
+  <h2>Developer Snapshot</h2>
 
-    <div class="background">
+  <div class="dashboard-grid">
 
-        <div class="blur blur1"></div>
+    <div class="dashboard-card">
+      <h3>🚀 Projects</h3>
+      <p class="big-number">5</p>
+      <p>AI + frontend applications</p>
+    </div>
 
-        <div class="blur blur2"></div>
+    <div class="dashboard-card">
+      <h3>⚡ Deployments</h3>
+      <p class="big-number">Live</p>
+      <p>All projects on Vercel</p>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>🧠 Focus</h3>
+      <p>AI + UX Development</p>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>🛠 Stack</h3>
+      <div class="tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>API</span>
+        <span>Git</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+  <h2>About</h2>
+
+  <p>
+    I build AI-powered web applications focused on usability, performance and modern UI design.
+    My goal is to create real products, not just demos.
+  </p>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+  <h2>Featured Work</h2>
+
+  <!-- FEATURED HERO PROJECT -->
+  <div class="featured-hero">
+
+    <div class="featured-content">
+
+      <h3>AI Resume Builder</h3>
+
+      <p>
+        AI system that generates professional resumes instantly with optimized structure and modern design.
+      </p>
+
+      <div class="feature-badges">
+        <span>AI Powered</span>
+        <span>Productivity Tool</span>
+        <span>Export Ready</span>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="resume-builder.html">Case Study</a>
+        <a href="https://ai-resume-builder-theta-eight.vercel.app/" target="_blank">Live Demo</a>
+      </div>
 
     </div>
 
-    <!-- HERO -->
+    <div class="featured-box">🚀</div>
 
-    <section class="hero">
+  </div>
 
-        <img
-            src="assets/images/avatar.jpg"
-            class="avatar"
-            alt="avatar"
-        >
+  <!-- MORE PROJECTS -->
+  <div class="sub-title">More Projects</div>
 
-        <div class="status">
+  <div class="project-grid">
 
-            <span class="dot"></span>
-
-            Available For New Projects
-
-        </div>
-
-        <h1>
-
-            Building Modern
-
-            <span>
-                Web & AI Products
-            </span>
-
-        </h1>
-
-        <p>
-
-            Frontend Developer · UI Designer · AI Explorer
-
-        </p>
-
-        <div class="hero-buttons">
-
-            <a
-                href="https://github.com/Nov2kkkk"
-                target="_blank"
-            >
-                GitHub
-            </a>
-
-            <a href="#projects">
-                View Projects
-            </a>
-
-        </div>
-
-    <section class="dashboard reveal">
-
-    <h2>Developer Overview</h2>
-
-    <div class="dashboard-grid">
-
-        <div class="dashboard-card">
-        <h3>🚀 Projects Built</h3>
-        <p class="big-number">5</p>
-        <p>AI-powered web apps focused on productivity and UX</p>
-        </div>
-
-        <div class="dashboard-card">
-        <h3>⚡ Deployment Status</h3>
-        <p class="big-number">Live</p>
-        <p>All projects deployed with responsive design</p>
-        </div>
-
-        <div class="dashboard-card">
-        <h3>🧠 Focus Area</h3>
-        <p>AI + Frontend Development</p>
-        <p>Building interactive web experiences</p>
-        </div>
-
-        <div class="dashboard-card">
-        <h3>🛠 Tech Stack</h3>
-        <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Git</span>
-            <span>Vercel</span>
-            <span>API</span>
-        </div>
-        </div>
-
+    <div class="card">
+      <h3>AI Chat</h3>
+      <p class="project-tagline">Real-time AI conversation interface</p>
+      <a href="ai-chat.html">View Project</a>
     </div>
 
-    </section>
-    
-        <!-- ABOUT -->
-
-        <section
-            id="about"
-            class="reveal"
-        >
-
-            <h2>
-                About Me
-            </h2>
-
-            <p>
-
-                I am currently exploring AI applications,
-                modern frontend development and interactive
-                user experiences.
-
-                My focus is building products that combine
-                clean design, usability and technology.
-
-            </p>
-
-            <div class="stats">
-
-                <div class="stat-card">
-
-                    <h3>
-                        5+
-                    </h3>
-
-                    <p>
-                        Projects
-                    </p>
-
-                </div>
-
-                <div class="stat-card">
-
-                    <h3>
-                        Frontend
-                    </h3>
-
-                    <p>
-                        Development
-                    </p>
-
-                </div>
-
-                <div class="stat-card">
-
-                    <h3>
-                        AI
-                    </h3>
-
-                    <p>
-                        Exploration
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    <!-- SKILLS -->
-
-    <section
-        id="skills"
-        class="reveal"
-    >
-
-        <h2>
-            Skills
-        </h2>
-
-        <div class="skill-grid">
-
-            <div class="skill">HTML</div>
-
-            <div class="skill">CSS</div>
-
-            <div class="skill">JavaScript</div>
-
-            <div class="skill">Git</div>
-
-            <div class="skill">GitHub</div>
-
-            <div class="skill">Vercel</div>
-
-            <div class="skill">Responsive Design</div>
-
-            <div class="skill">UI Design</div>
-
-            <div class="skill">React</div>
-
-        </div>
-
-    </section>
-
-    <section class="skills-progress reveal">
-
-        <h2>Development Skills</h2>
-
-        <div class="progress-item">
-
-            <span>HTML</span>
-
-            <div class="progress-bar">
-                <div class="progress html"></div>
-            </div>
-
-        </div>
-
-        <div class="progress-item">
-
-            <span>CSS</span>
-
-            <div class="progress-bar">
-                <div class="progress css"></div>
-            </div>
-
-        </div>
-
-        <div class="progress-item">
-
-            <span>JavaScript</span>
-
-            <div class="progress-bar">
-                <div class="progress js"></div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- PROJECTS -->
-
-    <section id="projects" class="reveal">
-
-    <h2>Featured Work</h2>
-
-    <!-- FEATURED PROJECT -->
-    <h3 class="project-category">🔥 Featured Project</h3>
-
-    <div class="project-grid">
-
-        <div class="card featured">
-
-        <h3>AI Resume Builder 📄</h3>
-
-        <p class="project-tagline">
-            AI-powered resume generator that helps users create optimized, professional resumes instantly.
-        </p>
-
-        <ul class="feature-list">
-            <li>AI-generated resume content</li>
-            <li>Modern responsive UI</li>
-            <li>Instant PDF-ready output</li>
-        </ul>
-
-        <div class="tech-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>AI API</span>
-        </div>
-
-        <div class="card-buttons">
-            <a href="resume-builder.html">Case Study</a>
-            <a href="https://ai-resume-builder-theta-eight.vercel.app/" target="_blank">Live Demo</a>
-        </div>
-
-        </div>
-
+    <div class="card">
+      <h3>Task Manager</h3>
+      <p class="project-tagline">Productivity tool with local storage</p>
+      <a href="task-manager.html">View Project</a>
     </div>
 
-    <!-- AI PROJECTS -->
-    <h3 class="project-category">🤖 AI Projects</h3>
-
-    <div class="project-grid">
-
-        <div class="card">
-
-        <h3>AI Chat Platform</h3>
-
-        <p class="project-tagline">
-            Real-time AI chat interface with modern conversational UX.
-        </p>
-
-        <ul class="feature-list">
-            <li>Streaming chat response</li>
-            <li>Responsive UI design</li>
-            <li>Clean conversation layout</li>
-        </ul>
-
-        <div class="tech-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>API</span>
-        </div>
-
-        <div class="card-buttons">
-            <a href="ai-chat.html">Case Study</a>
-            <a href="https://my-ai-chat-omega-steel.vercel.app" target="_blank">Live Demo</a>
-        </div>
-
-        </div>
-
+    <div class="card">
+      <h3>Weather App</h3>
+      <p class="project-tagline">Live weather dashboard with API</p>
+      <a href="weather-app.html">View Project</a>
     </div>
 
-    <!-- PRODUCTIVITY -->
-    <h3 class="project-category">⚡ Productivity Tools</h3>
+  </div>
 
-    <div class="project-grid">
+</section>
 
-        <div class="card">
+<!-- CONTACT -->
+<section id="contact">
 
-        <h3>Task Manager</h3>
+  <h2>Contact</h2>
 
-        <p class="project-tagline">
-            Productivity app for managing tasks with local storage persistence.
-        </p>
+  <p>Let’s build something impactful together</p>
 
-        <ul class="feature-list">
-            <li>Task CRUD system</li>
-            <li>LocalStorage persistence</li>
-            <li>Clean UI workflow</li>
-        </ul>
+  <div class="hero-buttons">
+    <a href="mailto:3249949614kk@gmail.com">Email</a>
+    <a href="https://github.com/Nov2kkkk" target="_blank">GitHub</a>
+  </div>
 
-        <div class="tech-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>LocalStorage</span>
-        </div>
+</section>
 
-        <div class="card-buttons">
-            <a href="task-manager.html">Case Study</a>
-            <a href="https://task-manager-app-sand-seven.vercel.app" target="_blank">Live Demo</a>
-        </div>
+<footer>
+  © 2026 Panyuting · Built with HTML / CSS / JS
+</footer>
 
-        </div>
-
-    </div>
-
-    <!-- UTILITIES -->
-    <h3 class="project-category">🌤 Utilities</h3>
-
-    <div class="project-grid">
-
-        <div class="card">
-
-        <h3>Weather App</h3>
-
-        <p class="project-tagline">
-            Real-time weather dashboard with dynamic forecasts and responsive design.
-        </p>
-
-        <ul class="feature-list">
-            <li>Live weather API</li>
-            <li>Forecast visualization</li>
-            <li>Responsive UI</li>
-        </ul>
-
-        <div class="tech-stack">
-            <span>API</span>
-            <span>JavaScript</span>
-            <span>Responsive UI</span>
-        </div>
-
-        <div class="card-buttons">
-            <a href="weather-app.html">Case Study</a>
-            <a href="https://weather-app-phi-black-46.vercel.app" target="_blank">Live Demo</a>
-        </div>
-
-        </div>
-
-    </div>
-
-    </section>
-
-        <h2>
-            Featured Projects
-        </h2>
-
-        <div class="project-grid">
-
-            <!-- AI CHAT -->
-
-            <div class="card">
-
-                <h3>
-                    AI Chat Platform
-                </h3>
-
-                <p>
-
-                    Modern conversational AI experience
-                    featuring responsive interface,
-                    elegant design and real-time chat.
-
-                </p>
-
-                <div class="tech-stack">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-
-                </div>
-
-                <div class="card-buttons">
-
-                    <a href="ai-chat.html">
-                        Case Study
-                    </a>
-
-                    <a
-                        href="https://my-ai-chat-omega-steel.vercel.app"
-                        target="_blank"
-                    >
-                        Live Demo
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- AI Resume Builder -->
-            <div class="card">
-
-                <h3>
-                AI Resume Builder 📄
-                </h3>
-
-                <p>
-                Generate professional resumes instantly
-                using modern web technologies.
-                </p>
-
-                <div class="tech-stack">
-
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-
-                </div>
-
-                <div class="card-buttons">
-
-                <a
-                href="resume-builder.html"
-                >
-                Case Study
-                </a>
-
-                <a
-                    href="https://ai-resume-builder-theta-eight.vercel.app/"
-                    target="_blank"
-                >
-                    Live Demo
-                </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- PORTFOLIO -->
-
-            <div class="card">
-
-                <h3>
-                    Portfolio Website
-                </h3>
-
-                <p>
-
-                    Responsive portfolio website
-                    featuring animations,
-                    clean layout and modern UI.
-
-                </p>
-
-                <div class="tech-stack">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Animation</span>
-
-                </div>
-
-            </div>
-
-            <!-- Weather App -->
-
-            <div class="card">
-
-            <div class="card-glow"></div>
-
-            <h3>
-                Weather App ☀️
-            </h3>
-
-            <p>
-                A modern weather dashboard
-                featuring real-time forecasts,
-                dynamic weather icons
-                and responsive design.
-            </p>
-
-            <div class="tech-stack">
-
-                <span>API</span>
-                <span>JavaScript</span>
-                <span>Responsive UI</span>
-
-            </div>
-
-            <div class="card-buttons">
-
-                <a href="weather-app.html">
-                    Case Study
-                </a>
-
-                <a href="https://weather-app-phi-black-46.vercel.app">
-                    Live Demo
-                </a>
-
-            </div>
-
-            </div>
-
-            <!-- Task Manager App -->
-
-            <div class="card">
-
-            <div class="card-glow"></div>
-
-            <h3>
-                Task Manager 📋
-            </h3>
-
-            <p>
-                A productivity application that allows
-                users to create, manage and complete tasks
-                with local storage persistence.
-            </p>
-
-            <div class="tech-stack">
-
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>LocalStorage</span>
-
-            </div>
-
-            <div class="card-buttons">
-
-                <a href="task-manager.html">
-                    Case Study
-                </a>
-
-                <a
-                    href="https://task-manager-app-sand-seven.vercel.app"
-                    target="_blank"
-                >
-                    Live Demo
-                </a>
-
-            </div>
-
-        </div>
-
-        </div>
-
-    </section>
-
-    <section class="timeline reveal">
-
-        <h2>Journey</h2>
-
-        <div class="timeline-item">
-
-            2025 · Started Learning Web Development
-
-        </div>
-
-        <div class="timeline-item">
-
-            2025 · Built AI Chat Platform
-
-        </div>
-
-        <div class="timeline-item">
-
-            2025 · Built Resume Builder
-
-        </div>
-
-        <div class="timeline-item">
-
-            2025 · Built Weather App
-
-        </div>
-
-        <div class="timeline-item">
-
-            2025 · Built Task Manager
-
-        </div>
-
-    </section>
-
-    <!-- CONTACT -->
-
-    <section
-        id="contact"
-        class="reveal"
-    >
-
-        <h2>
-            Contact
-        </h2>
-
-        <p>
-
-            Let's build something amazing together
-
-        </p>
-
-        <div class="hero-buttons">
-
-            <a
-                href="mailto:3249949614kk@gmail.com"
-            >
-                Email Me
-            </a>
-
-            <a
-                href="https://github.com/Nov2kkkk"
-                target="_blank"
-            >
-                GitHub
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        © 2026 Panyuting
-
-        <br>
-
-        Built with HTML · CSS · JavaScript
-
-        <br>
-
-        Deployed on Vercel
-
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
