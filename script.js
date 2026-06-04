@@ -1,13 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
+const reveals =
+document.querySelectorAll(".reveal");
 
-  // navbar shadow
-  const navbar = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
 
-  window.addEventListener("scroll", () => {
-    navbar.style.boxShadow =
-      window.scrollY > 10
-        ? "0 5px 15px rgba(0,0,0,0.08)"
-        : "none";
-  });
+reveals.forEach(item => {
+
+const top =
+item.getBoundingClientRect().top;
+
+if(top < window.innerHeight - 100){
+
+  item.classList.add("active");
+
+}
 
 });
+
+});
+
+window.dispatchEvent(new Event("scroll"));
